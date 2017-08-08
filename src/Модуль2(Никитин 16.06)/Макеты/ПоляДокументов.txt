@@ -1,0 +1,130 @@
+﻿<Objects>
+	<Object Name="ORDER" Sort="1">
+		<Items>
+			<Item Type="Строка" Name="OrderNumber" DocumentItem = ""/>
+			<Item Type="Дата" Name="OrderDate" DocumentItem = ""/>
+			<Item Type="Дата" Name="ExpectedDeliveryDate" DocumentItem = ""/>
+            <Item Type="Строка" Name="Remarks" DocumentItem = "СуммаДокумента"/>
+			<Item Type="Строка" Name="Buyer" DocumentItem = ""/>
+			<Item Type="Строка" Name="Seller" DocumentItem = ""/>
+			<Item Type="Строка" Name="DeliveryPoint" DocumentItem = ""/>
+			<Table Name="Order_Lines">
+				<row Type="Число" Name="OrderedQuantity" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedUnitNetPrice" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedUnitGrossPrice" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedNetAmount" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedGrossAmount" DocumentItem = ""/>
+			</Table>
+		</Items>
+	</Object>
+	<Object Name="ORDRSP" Sort="2">
+		<Items>
+			<Item Type="Строка" Name="OrderResponseNumber" DocumentItem = "Номер"/>
+			<Item Type="Дата" Name="OrderResponseDate" DocumentItem = "Дата"/>
+			<Item Type="Строка" Name="BuyerOrderNumber" DocumentItem = "НомерПоДаннымКлиента"/>
+			<Item Type="Дата" Name="BuyerOrderDate" DocumentItem = "ДатаПоДаннымКлиента"/>
+			<Item Type="Дата" Name="ExpectedDeliveryDate" DocumentItem = "ЖелаемаяДатаОтгрузки"/>
+			<Item Type="Строка" Name="Remarks" DocumentItem = "Комментарий"/>
+			<Item Type="Строка" Name="Sender" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="Receiver" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Buyer" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Seller" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="DeliveryPoint" DocumentItem = "Контрагент"/>     
+			<Item Type="Число" Name="TotalNetAmount" DocumentItem = "СуммаДокумента"/>
+			<Table Name="OrderResponse_Lines">
+				<row Type="Число" Name="LineNumber" DocumentItem = ""/>
+				<row Type="Строка" Name="ItemDescription" DocumentItem = ""/>
+				<row Type="Число" Name="AllocatedDelivered" DocumentItem = "Количество"/>
+				<row Type="Число" Name="TaxRate" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedUnitNetPrice" DocumentItem = "Цена"/>
+				<row Type="Число" Name="NetAmount" DocumentItem = ""/>
+			</Table>
+		</Items>
+	</Object>
+	<Object Name="DESADV" Sort="3">
+		<Items>
+			<Item Type="Строка" Name="DespatchAdviceNumber" DocumentItem = "Номер"/>
+			<Item Type="Дата" Name="DespatchAdviceDate" DocumentItem = "Дата"/>
+            <Item Type="Строка" Name="BuyerOrderNumber" DocumentItem = "ЗаказКлиента.Номер"/>
+            <Item Type="Строка" Name="BuyerOrderDate" DocumentItem = "ЗаказКлиента.Дата"/>
+			<Item Type="Строка" Name="Sender" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="Receiver" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Buyer" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Seller" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="DeliveryPoint" DocumentItem = "Контрагент"/>     
+			<Item Type="Строка" Name="UltimateCustomer" DocumentItem = ""/>			
+			<Item Type="Строка" Name="EstimatedDeliveryDate" DocumentItem = "ЗаказКлиента.ЖелаемаяДатаОтгрузки"/>
+			<Item Type="Строка" Name="DocumentFunctionCode" DocumentItem = ""/>
+			<Item Type="Строка" Name="DocumentNameCode" DocumentItem = ""/>			     
+			<Table Name="Packing_Sequence">
+				<row Type="Строка" Name="LineNumber" DocumentItem = ""/>
+				<row Type="Строка" Name="ItemDescription" DocumentItem = ""/>
+				<row Type="Число" Name="QuantityDespatched" DocumentItem = ""/>
+				<row Type="Число" Name="UnitNetPrice" DocumentItem = "Цена"/>
+				<row Type="Число" Name="UnitGrossPrice" DocumentItem = ""/>
+				<row Type="Число" Name="TaxRate" DocumentItem = "СтавкаНДС"/>
+				<row Type="Число" Name="NetAmount" DocumentItem = ""/>
+				<row Type="Число" Name="TaxAmount" DocumentItem = ""/>
+				<row Type="Число" Name="EAN" DocumentItem = ""/>
+				<row Type="Число" Name="BuyerItemCode" DocumentItem = ""/>
+				<row Type="Число" Name="SupplierItemCode" DocumentItem = ""/>
+				<row Type="Число" Name="OrderedQuantity" DocumentItem = "Количество"/>
+				<row Type="Число" Name="UnitOfMeasure" DocumentItem = ""/>
+				<row Type="Число" Name="UnitPacksize" DocumentItem = ""/>
+			</Table>
+		</Items>
+	</Object>
+	<Object Name="RECADV" Sort="4">
+		<Items>
+			<Item Type="Строка" Name="ReceivingAdviceNumber" DocumentItem = ""/>
+			<Item Type="Дата" Name="ReceivingAdviceDate" DocumentItem = ""/>
+			<Item Type="Дата" Name="GoodsReceiptDate" DocumentItem = ""/>
+            <Item Type="Строка" Name="BuyerOrderNumber" DocumentItem = ""/>
+			<Item Type="Дата" Name="BuyerOrderDate" DocumentItem = ""/>
+			<Item Type="Строка" Name="DespatchNumber" DocumentItem = ""/>
+			<Item Type="Дата" Name="DespatchDate" DocumentItem = ""/>
+			<Item Type="Строка" Name="Remarks" DocumentItem = ""/>
+			<Item Type="Строка" Name="Sender" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="Receiver" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Buyer" DocumentItem = "Партнер"/>
+            <Item Type="Строка" Name="Seller" DocumentItem = "Организация"/>
+			<Table Name="ReceivingAdvice_Lines">
+				<row Type="Строка" Name="LineNumber" DocumentItem = "НомерСтроки"/>
+				<row Type="Строка" Name="ItemDescription" DocumentItem = ""/>
+				<row Type="Строка" Name="SupplierItemCode" DocumentItem = ""/>
+				<row Type="Число" Name="QuantityReceived" DocumentItem = "Количество"/>
+				<row Type="Число" Name="QuantityOrdered" DocumentItem = ""/>
+				<row Type="Число" Name="UnitNetPrice" DocumentItem = "Цена"/>
+				<row Type="Число" Name="UnitGrossPrice" DocumentItem = ""/>
+			</Table>
+		</Items>
+	</Object>
+	<Object Name="FNSSTATUSARCHIVE" Sort="5">
+		<Items>
+			<Item Type="Дата" Name="ДатаСчФ" DocumentItem = "Дата"/>
+			<Item Type="Дата" Name="НомерСчФ" DocumentItem = "Номер"/>
+			<Item Type="Число" Name="СумБезНДСВс" DocumentItem = ""/>
+			<Item Type="Дата" Name="СумНДСВс" DocumentItem = "Номер"/>
+			<Item Type="Дата" Name="СумУчНДСВс" DocumentItem = "Номер"/>
+			<Item Type="Строка" Name="СвПрод" DocumentItem = "Организация"/>
+			<Item Type="Строка" Name="ГрузПолуч" DocumentItem = "Контрагент"/>
+			<Item Type="Строка" Name="СвПокуп" DocumentItem = "Контрагент"/>
+			<Item Type="Строка" Name="ИнфПолФХЖ1" DocumentItem = "Организация"/>
+			<Table Name="ТаблСчФакт">
+				<row Type="Строка" Name="НомСтр" DocumentItem = ""/>
+				<row Type="Число" Name="КолТов" DocumentItem = "Количество"/>
+				<row Type="Число" Name="НомСтр" DocumentItem = "НомерСтроки"/>
+				<row Type="Число" Name="НаимТов" DocumentItem = "Номенклатура.Наименование"/>
+				<row Type="Число" Name="ОКЕИ_Тов" DocumentItem = "Номенклатура.ЕдиницаИзмерения.Код"/>
+				<row Type="Число" Name="ЦенаТов" DocumentItem = "Цена"/>
+				<row Type="Число" Name="СтТовБезНДС" DocumentItem = ""/>
+				<row Type="Строка" Name="НалСт" DocumentItem = ""/>
+				<row Type="Число" Name="СтТовУчНал" DocumentItem = ""/>
+				<row Type="Число" Name="СумНал" DocumentItem = ""/>
+				<row Type="Число" Name="СтТовБезНДСВсего" DocumentItem = ""/>
+				<row Type="Число" Name="СтТовУчНалВсего" DocumentItem = ""/>
+				<row Type="Число" Name="СумНалВсего" DocumentItem = ""/>
+			</Table>
+		</Items>
+	</Object>
+</Objects>

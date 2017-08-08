@@ -1,0 +1,32 @@
+﻿Document-ReceivingAdvice/Document-Header/DocumentType	ТипДокумента	Тэг
+Document-ReceivingAdvice/Document-Header/DocumentID	ИдДокумента	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Header/BuyerOrderNumber	НомерЗаказа	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Header/ReceivingAdviceNumber	НомерДокумента	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Header/ReceivingAdviceDate	ДатаДокумента	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Header/GoodsReceiptDate	ДатаПриемки	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Header/DespatchNumber	НомерОтгрузки	Тэг
+Document-ReceivingAdvice/Document-Parties/Sender/ILN	ОтправительГЛН	Тэг
+Document-ReceivingAdvice/Document-Parties/Sender/Name	ОтправительИмя	Тэг
+Document-ReceivingAdvice/Document-Parties/Receiver/ILN	ПолучательГЛН	Тэг
+Document-ReceivingAdvice/Document-Parties/Receiver/Name	ПолучательИмя	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/Buyer/ILN	ПокупательГЛН	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/Buyer/Name	ПокупательИмя	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/Seller/ILN	ПродавецГЛН	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/Seller/Name	ПродавецИмя	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/DeliveryPoint/ILN	ТочкаДоставкиГЛН	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Parties/DeliveryPoint/Name	ТочкаДоставкиИмя	Тэг
+Document-ReceivingAdvice/ReceivingAdvice-Lines/Line/Line-Item	СтрокиДокумента	СтрокиДокумента
+Line-Item/LineNumber	НомерСтроки	СтрокаДокумента
+Line-Item/EAN	Штрихкод	СтрокаДокумента
+Line-Item/BuyerItemCode	КодПокупателя	СтрокаДокумента
+Line-Item/ItemDescription	Товар	СтрокаДокумента
+Line-Item/QuantityReceived	Количество	СтрокаДокумента
+Line-Item/UnitOfMeasure	ЕдиницаИзмерения	СтрокаДокумента
+Line-Item/UnitNetPrice	ЦенаБезНДС	СтрокаДокумента
+Line-Item/TaxRate	СтавкаНДС	СтрокаДокумента
+Line-Item/UnitGrossPrice	ЦенаСНДС	СтрокаДокумента
+Line-Item/UnitPacksize	Коэффициент	СтрокаДокумента
+Document-DespatchAdvice/DespatchAdvice-Summary/TotalLines	ВсегоСтрок	Тэг
+Document-DespatchAdvice/DespatchAdvice-Summary/TotalGoodsDespatchedAmount	ВсегоКоличество	Тэг
+		
+		
